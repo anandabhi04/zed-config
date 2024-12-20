@@ -1,0 +1,61 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-p": "file_finder::Toggle",
+      "cmd-escape": "workspace::ToggleLeftDock",
+      "cmd-enter": "workspace::ToggleBottomDock",
+      "cmd-shift-o": "projects::OpenRecent"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-escape": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-k cmd-w": null,
+      "cmd-w": "workspace::CloseWindow",
+      "cmd-enter": "workspace::ToggleBottomDock",
+      "cmd-escape": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // editor editing related shortcuts
+      "cmd-l": "editor::DuplicateLineDown",
+      "cmd-d": "editor::DeleteLine",
+      "cmd-y": "editor::Redo",
+
+      "cmd-e cmd-r": "editor::Rename",
+      "cmd-e cmd-l": "editor::SelectLine",
+
+      // editor navigation
+      "cmd-f h": "search::ToggleReplace",
+      "cmd-f f": "buffer_search::Deploy",
+      "cmd-f g": "go_to_line::Toggle",
+      "cmd-f a": "editor::FindAllReferences",
+      "cmd-k o": "outline::Toggle",
+
+      // git related shortcuts
+      "cmd-g b": "branches::OpenRecent",
+      "cmd-g l": "editor::ToggleGitBlame",
+
+      "cmd-escape": "project_panel::ToggleFocus",
+      "cmd-enter": "terminal_panel::ToggleFocus",
+
+      "cmd-k cmd-l": "snippets::ConfigureSnippets"
+    }
+  }
+]
