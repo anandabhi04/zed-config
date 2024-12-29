@@ -12,7 +12,9 @@
       "cmd-p": "file_finder::Toggle",
       "cmd-escape": "workspace::ToggleLeftDock",
       "cmd-enter": "workspace::ToggleBottomDock",
-      "cmd-shift-o": "projects::OpenRecent"
+      "cmd-shift-o": "projects::OpenRecent",
+
+      "cmd-g b": "branches::OpenRecent"
     }
   },
   {
@@ -25,7 +27,6 @@
     "context": "Terminal",
     "bindings": {
       "cmd-k cmd-w": null,
-      "cmd-w": "workspace::CloseWindow",
       "cmd-enter": "workspace::ToggleBottomDock",
       "cmd-escape": "project_panel::ToggleFocus"
     }
@@ -42,11 +43,14 @@
       "cmd-e cmd-l": "editor::SelectLine",
 
       // editor navigation
-      "cmd-f h": "search::ToggleReplace",
-      "cmd-f f": "buffer_search::Deploy",
-      "cmd-f g": "go_to_line::Toggle",
-      "cmd-f a": "editor::FindAllReferences",
+      "cmd-f cmd-f": "buffer_search::Deploy",
+      "cmd-f cmd-g": "go_to_line::Toggle",
+      "cmd-f cmd-h": "search::ToggleReplace",
+      "cmd-f cmd-a": "editor::FindAllReferences",
+
+      // miscellaneous editor shortcuts
       "cmd-k o": "outline::Toggle",
+      "cmd-e i": "editor::ToggleInlayHints",
 
       // git related shortcuts
       "cmd-g b": "branches::OpenRecent",
@@ -54,6 +58,8 @@
 
       "cmd-escape": "project_panel::ToggleFocus",
       "cmd-enter": "terminal_panel::ToggleFocus",
+      "cmd-ctrl-left": "pane::GoBack",
+      "cmd-ctrl-right": "pane::GoForward",
 
       "cmd-k cmd-l": "snippets::ConfigureSnippets"
     }

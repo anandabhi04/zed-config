@@ -51,7 +51,7 @@
   "completion_documentation_secondary_query_debounce": 300,
   "auto_signature_help": false,
   "show_signature_help_after_edits": true,
-  "show_wrap_guides": true,
+  "show_wrap_guides": false,
   "wrap_guides": [80, 100],
   "redact_private_values": false,
   "expand_excerpt_lines": 5,
@@ -115,13 +115,16 @@
   "seed_search_query_from_cursor": "always",
   "unnecessary_code_fade": 0.5,
   "inlay_hints": {
-    "enabled": true,
+    "enabled": false,
     "show_type_hints": true,
     "show_parameter_hints": true,
     "show_other_hints": true,
     "show_background": false,
     "edit_debounce_ms": 700,
     "scroll_debounce_ms": 50
+  },
+  "file_finder": {
+    "file_icons": true
   },
   "project_panel": {
     "button": true,
@@ -184,8 +187,8 @@
     "default_width": 640,
     "default_height": 320,
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet"
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
     }
   },
 
