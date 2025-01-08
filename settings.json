@@ -77,7 +77,7 @@
   },
 
   "toolbar": {
-    "breadcrumbs": true,
+    "breadcrumbs": null,
     "quick_actions": true,
     "selections_menu": true
   },
