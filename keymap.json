@@ -11,16 +11,18 @@
     "bindings": {
       "cmd-p": "file_finder::Toggle",
       "cmd-escape": "workspace::ToggleLeftDock",
+      "ctrl-escape": "workspace::ToggleRightDock",
       "cmd-enter": "workspace::ToggleBottomDock",
       "cmd-shift-o": "projects::OpenRecent",
 
-      "cmd-g b": "branches::OpenRecent"
+      "cmd-g cmd-b": "git::Branch"
     }
   },
   {
     "context": "ProjectPanel",
     "bindings": {
-      "cmd-escape": "workspace::ToggleLeftDock"
+      "cmd-escape": "workspace::ToggleLeftDock",
+      "ctrl-escape": "workspace::ToggleRightDock"
     }
   },
   {
@@ -28,7 +30,8 @@
     "bindings": {
       "cmd-k cmd-w": null,
       "cmd-enter": "workspace::ToggleBottomDock",
-      "cmd-escape": "project_panel::ToggleFocus"
+      "cmd-escape": "project_panel::ToggleFocus",
+      "ctrl-escape": "workspace::ToggleRightDock"
     }
   },
   {
@@ -53,10 +56,12 @@
       "cmd-e i": "editor::ToggleInlayHints",
 
       // git related shortcuts
-      "cmd-g b": "branches::OpenRecent",
-      "cmd-g l": "editor::ToggleGitBlame",
+      "cmd-g cmd-b": "git::Branch",
+      "cmd-g cmd-l": "editor::ToggleGitBlame",
+      "cmd-g cmd-d": "git::Diff",
 
       "cmd-escape": "project_panel::ToggleFocus",
+      "ctrl-escape": "workspace::ToggleRightDock",
       "cmd-enter": "terminal_panel::ToggleFocus",
       "cmd-ctrl-left": "pane::GoBack",
       "cmd-ctrl-right": "pane::GoForward",

@@ -16,7 +16,7 @@
   "cursor_shape": "block",
   "base_keymap": "VSCode",
   "features": {
-    "edit_prediction_provider": "copilot",
+    "edit_prediction_provider": "zed",
     "copilot": true
   },
   "buffer_font_family": "Zed Plex Mono",
@@ -68,7 +68,7 @@
   "use_autoclose": true,
   "use_auto_surround": true,
   "always_treat_brackets_as_autoclosed": false,
-  "show_edit_predictions": true,
+  "show_inline_completions": true,
 
   "show_whitespaces": "selection",
 
@@ -148,7 +148,7 @@
   "outline_panel": {
     "button": true,
     "default_width": 300,
-    "dock": "left",
+    "dock": "right",
     "file_icons": true,
     "folder_icons": true,
     "git_status": true,
@@ -168,7 +168,7 @@
     "default_width": 240
   },
   "chat_panel": {
-    "button": "when_in_call",
+    "button": false,
     "dock": null,
     "default_width": 240
   },
@@ -188,8 +188,8 @@
     "default_width": 640,
     "default_height": 320,
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "provider": "deepseek",
+      "model": "deepseek-chat"
     }
   },
 
@@ -281,7 +281,7 @@
   },
 
   "load_direnv": "shell_hook",
-  "edit_predictions": {
+  "inline_completions": {
     "disabled_globs": [".env"]
   },
 
@@ -411,7 +411,7 @@
       "code_actions_on_format": {
         "source.fixAll.eslint": true
       },
-      "edit_predictions_disabled_in": ["comment", "string"],
+      "inline_completions_disabled_in": ["comment", "string"],
       "indent_guides": {
         "coloring": "fixed",
         "background_coloring": "disabled",
@@ -430,7 +430,7 @@
       "code_actions_on_format": {
         "source.fixAll.eslint": true
       },
-      "edit_predictions_disabled_in": ["comment", "string"],
+      "inline_completions_disabled_in": ["comment", "string"],
       "indent_guides": {
         "coloring": "fixed",
         "background_coloring": "disabled",
