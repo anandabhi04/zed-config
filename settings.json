@@ -129,7 +129,7 @@
   },
   "project_panel": {
     "button": true,
-    "default_width": 300,
+    "default_width": 400,
     "dock": "left",
     "file_icons": true,
     "folder_icons": true,
@@ -144,6 +144,15 @@
     "scrollbar": {
       "show": "never"
     }
+  },
+  "git_panel": {
+    "default_width": 400,
+    "scrollbar": {
+      "show": "never"
+    },
+    "status_style": "icon",
+    "dock": "left",
+    "button": true
   },
   "outline_panel": {
     "button": true,

@@ -12,7 +12,7 @@
       "cmd-p": "file_finder::Toggle",
       "cmd-escape": "workspace::ToggleLeftDock",
       "ctrl-escape": "workspace::ToggleRightDock",
-      "cmd-enter": "workspace::ToggleBottomDock",
+      // "cmd-enter": "workspace::ToggleBottomDock",
       "cmd-shift-o": "projects::OpenRecent",
 
       "cmd-g cmd-b": "git::Branch"
@@ -21,8 +21,17 @@
   {
     "context": "ProjectPanel",
     "bindings": {
-      "cmd-escape": "workspace::ToggleLeftDock",
-      "ctrl-escape": "workspace::ToggleRightDock"
+      "cmd-escape": "git_panel::ToggleFocus",
+      "ctrl-escape": "workspace::ToggleRightDock",
+      "cmd-shift-escape": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "GitPanel",
+    "bindings": {
+      "cmd-escape": "project_panel::ToggleFocus",
+      "ctrl-escape": "workspace::ToggleRightDock",
+      "cmd-shift-escape": "git_panel::ToggleFocus"
     }
   },
   {
